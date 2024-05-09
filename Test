@@ -1,0 +1,12 @@
+local button = Instance.new("TextButton")
+button.Size = UDim2.new(0, 100, 0, 50)
+button.Position = UDim2.new(0, 100, 0, 100)
+button.TextColor3 = Color3.new(0, 0, 0)
+button.FontSize = Enum.FontSize.Size24
+button.Font = Enum.Font.SourceSans
+button.Text = "Execute"
+button.Parent = game.Workspace
+button.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/C00lHamoot/Project-Ligma-/e34d89ffe62d737ca615aee3017affa0dad30efc/V3"))()
+    button:Destroy()
+end)
